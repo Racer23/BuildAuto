@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\ws_as\TestingExample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="11c7b9be1ede9589199c2b16c01a0743f4847748">
+        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61908c055fd7d8308d6505e186f0b964608027d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.1.1_0a98f8af05e1fbc770e1e6f61736903b4c5d6563\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.1.1_548e252b7f6f6afaf3730971e6a7957c8f67e0f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.1.1_975452416338f15c0d79a35ce662f40a11cb396e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ws_as\TestingExample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="ef051efbd8defcc1dc57bca72c8f1c8a00ab5532">
+        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7c0ce9be19b1dd8b1681d83f7ffb16fe33d47507\classes.dex" />
+    </item>
+
+</items>
