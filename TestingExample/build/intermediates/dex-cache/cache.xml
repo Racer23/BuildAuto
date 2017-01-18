@@ -2,49 +2,123 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="D:\ws_as\TestingExample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support.test\runner\0.2\jars\classes.jar"
+        jumboMode="false"
         revision="22.0.1"
-        sha1="11c7b9be1ede9589199c2b16c01a0743f4847748">
-        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_61908c055fd7d8308d6505e186f0b964608027d1\classes.dex" />
+        sha1="3a764c7aef5be3d7b138eabf0334ccadf889fcbd">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-runner-0.2_18087cb4dfdac4ef9c59c045bfc3b0ad20824555.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-core\2.1\jars\classes.jar"
+        jumboMode="false"
         revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.1.1_0a98f8af05e1fbc770e1e6f61736903b4c5d6563\classes.dex" />
+        sha1="29d14c552f643eae0255ba38f93c0b968fd092c4">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test.espresso-espresso-core-2.1_d119ef21bb4ad615c2def279a4b1a712796e636b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support.test\exposed-instrumentation-api-publish\0.2\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="aa416efe9dd2717f8eb55b1f5d9903bc7f9f663a">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-exposed-instrumentation-api-publish-0.2_1b18ed02a333a4d96508221d767ca327eb8d6bbd.jar" />
+    </item>
+    <item
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
         revision="22.0.1"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.1.1_548e252b7f6f6afaf3730971e6a7957c8f67e0f4\classes.dex" />
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.1.1_f669e52cfeeadf9903b88998fd5de06c96c4f7fb.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\ws_as\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="true"
-        optimize="true"
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.1.1_5b905902cc735702eb8f92d4ef37499588f8277c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_69d0b6c8ffa05193b3c0ebfa1d1d218ee290f911.jar" />
+    </item>
+    <item
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support.test\rules\0.2\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="28db0e59551f4468fd53106e1cb13beaf636007b">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-rules-0.2_e9275cbd130e1879f69242e87a5a72ffb6b7dea5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_af7ee2f3b9d3630486ce20b1419f79e060750c11.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\junit\junit-dep\4.10\64417b3bafdecd366afa514bd5beeae6c1f85ece\junit-dep-4.10.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="64417b3bafdecd366afa514bd5beeae6c1f85ece">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\junit-dep-4.10_d2bc2a0b8d4aaf551264d107c9da99b979ff0895.jar" />
+    </item>
+    <item
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-idling-resource\2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7cc1fbd6049001f7bb694f360cc1aad53d0128b6">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test.espresso-espresso-idling-resource-2.1_0727d28ed6d09d5e4d84c8bea04aba2c7eb8e5d1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.1\b988c01468e3398d46678a2eb48aeb5bde271e9f\hamcrest-library-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b988c01468e3398d46678a2eb48aeb5bde271e9f">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.1_e29eeb897934ebc74d0cc1c4f8a5577c52b4c87d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.1\860340562250678d1a344907ac75754e259cdb14\hamcrest-core-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="860340562250678d1a344907ac75754e259cdb14">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.1_1b1e922149a2b2f1a7e15861652e51ab4595774f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_273da2ba53aedc2691b5c6c4485ebe7b12b6e634.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.1\8d47177aa4da0f259fc823a39736bad2f09993d5\hamcrest-integration-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d47177aa4da0f259fc823a39736bad2f09993d5">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.1_bb207334be297c50c049eee167888eff768830e7.jar" />
+    </item>
+    <item
+        jar="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
         revision="22.0.1"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.1.1_975452416338f15c0d79a35ce662f40a11cb396e\classes.dex" />
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1_6022c6130e9da0824cd826b7a77bd7475ee92fca.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\ws_as\TestingExample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
         revision="22.0.1"
-        sha1="ef051efbd8defcc1dc57bca72c8f1c8a00ab5532">
-        <dex dex="D:\ws_as\TestingExample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7c0ce9be19b1dd8b1681d83f7ffb16fe33d47507\classes.dex" />
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_e9fe52607856b0c8db25e7e50db94a043a034fb8.jar" />
+    </item>
+    <item
+        jar="C:\env_var\Android_Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\workspace_st\buildAuto\TestingExample\app\build\intermediates\pre-dexed\androidTest\debug\support-annotations-22.0.0_b206bbc82cf082201c3e968bf1f2d0511d184c85.jar" />
     </item>
 
 </items>
