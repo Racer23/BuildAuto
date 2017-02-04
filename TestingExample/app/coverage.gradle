@@ -46,7 +46,7 @@ task jacocoAndroidTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest")
     additionalSourceDirs = files(coverageSourceDirs)
     sourceDirectories = files(coverageSourceDirs)
     additionalClassDirs = files(coverageSourceDirs)
-    executionData = files("$buildDir/outputs/androidTest-code-coverage/connected/coverage.ec")
+    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
 }
 
 //jacocoTestReport依赖于test task，所以在执行jacoco之前需要先执行test
