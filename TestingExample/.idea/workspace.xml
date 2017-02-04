@@ -63,7 +63,7 @@
       <file leaf-file-name="MainActivityInstrumentationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/testing/testingexample/MainActivityInstrumentationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
+            <state relative-caret-position="513">
               <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
               <folding />
             </state>
@@ -2276,7 +2276,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1388" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1388" height="916" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -2444,7 +2444,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/testing/testingexample/MainActivityInstrumentationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
+        <state relative-caret-position="513">
           <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
           <folding />
         </state>
