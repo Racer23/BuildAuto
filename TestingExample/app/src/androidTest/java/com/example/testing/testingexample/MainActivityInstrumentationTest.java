@@ -15,6 +15,7 @@ import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by on 15/6/4.
@@ -38,6 +39,11 @@ public class MainActivityInstrumentationTest {
 
         String expectedText = "Hello, " + STRING_TO_BE_TYPED + "!";
         onView(withId(R.id.textView)).check(matches(withText(expectedText))); //line 3
+    }
+
+    @Test
+    public void sum(){
+        assertEquals(6d, new Calculator().sum(1d, 5d), 0);
     }
 
 }
