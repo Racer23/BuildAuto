@@ -34,6 +34,12 @@ task jacocoAndroidTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest")
     }
     classDirectories = fileTree(
             dir : "$buildDir/intermediates/classes/debug",
+            includes: [
+                    "com/dolphin/browser/popup/RatingPopup*",
+                    "com/dolphin/browser/popup/PopupManager*",
+                    "mobi/mgeek/TunnyBrowser/BrowserActivity*",
+                    "mobi/mgeek/TunnyBrowser/DeferredTaskManager*"
+            ],
             excludes : [
                     '**/*Test.class',
                     '**/R.class',
@@ -46,7 +52,7 @@ task jacocoAndroidTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest")
     additionalSourceDirs = files(coverageSourceDirs)
     sourceDirectories = files(coverageSourceDirs)
     additionalClassDirs = files(coverageSourceDirs)
-    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
+    executionData = files("$buildDir/outputs/code-coverage/connected")
 }
 
 //jacocoTestReport依赖于test task，所以在执行jacoco之前需要先执行test
@@ -72,5 +78,5 @@ task jacocoTestReport(type:JacocoReport,dependsOn:"test"){
     additionalSourceDirs = files(coverageSourceDirs)
     sourceDirectories = files(coverageSourceDirs)
     additionalClassDirs = files(coverageSourceDirs)
-    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
+    executionData = files("$buildDir/outputs/code-coverage/connected")
 }

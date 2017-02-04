@@ -35,7 +35,7 @@ public class CalculatorTest {
 
     @Test
     public void testMultiply() throws Exception {
-//        assertEquals(10d, mCalculator.multiply(2d, 5d), 0);
+        assertEquals(10d, mCalculator.multiply(2d, 5d), 0);
     }
 
 }
