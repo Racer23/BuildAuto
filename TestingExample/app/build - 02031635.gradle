@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.testing.testingexample"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled = true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+}
+jacoco {
+    toolVersion = "0.7.6.201602180812"
+}
+
+// Define coverage source.
+// If you have rs/aidl etc... add them here.
+def coverageSourceDirs = [
+        'src/main/java',
+        'src/gen'
+]
+
+// This differs per what flavors buildTypes etc.
+// But this example shows the 'testDebug'
+// which is standard for Robolectric
+task jacocoTestReport(type: JacocoReport, dependsOn: "test") {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+    // class R is used, but usage will not be covered, so ignore this class from report
+    // This differs per plugin version (0.10 -> 0.11)
+    // have very different fileTrees.
+    // I have added rules to Ignore Dagger/Butterknife
+    classDirectories = fileTree(
+            dir: './build/intermediates/classes/debug',
+            excludes: ['com/myapp/R*.class',
+                       '**/*$InjectAdapter.class',
+                       '**/*$ModuleAdapter.class',
+                       '**/*$ViewInjector*.class'
+            ])
+    sourceDirectories = files(coverageSourceDirs)
+    executionData = files('build/jacoco/testDebug.exec')
+    // Bit hacky but fixes https://code.google.com/p/android/issues/detail?id=69174.
+    // We iterate through the compiled .class tree and rename $$ to $.
+    doFirst {
+        new File('myapp/build/intermediates/classes/').eachFileRecurse { file ->
+            if (file.name.contains('$$')) {
+                file.renameTo(file.path.replace('$$', '$'))
+            }
+        }
+    }
+    afterEvaluate {
+        // just clean up coveralls dashboard, following reports are not of interest
+//        testDebug.reports.junitXml.enabled = false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile ('com.android.support:appcompat-v7:22.1.1'){
+        exclude group: 'com.android.support', module:'support-annotations'
+    }
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:0.2'
+    androidTestCompile 'com.android.support.test:rules:0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
+}
+
