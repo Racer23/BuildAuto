@@ -1,7 +1,7 @@
 //代码覆盖率插件
 apply plugin: 'jacoco'
 
-//android {
+android {
 // 目前已经不支持通过jacoco{}指定版本了，如果加入这块代码，运行不会出错，但是会有
 // warning提示
 //    jacoco{
@@ -16,12 +16,12 @@ apply plugin: 'jacoco'
 //        javaMaxHeapSize "4g"
 //    }
 
-//    buildTypes {
-//        debug{
-//            testCoverageEnabled true
-//        }
-//    }
-//}
+    buildTypes {
+        debug{
+            testCoverageEnabled true
+        }
+    }
+}
 
 //jacocoTestReport依赖于connectedAndroidTest task，所以在执行jacoco之前需要先执行connectedAndroidTest，也就是说需要连接测试机（模拟器or真机）
 task jacocoAndroidTestReport(type:JacocoReport,dependsOn:"connectedAndroidTest"){
