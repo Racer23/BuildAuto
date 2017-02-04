@@ -4,6 +4,7 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,10 +27,16 @@ import static org.junit.Assert.assertEquals;
 public class MainActivityInstrumentationTest {
 
     private static final String STRING_TO_BE_TYPED = "Peter";
+    private Calculator mCalculator;
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
+
+    @Before
+    public void setUp() throws Exception {
+        mCalculator = new Calculator();
+    }
 
     @Test
     public void sayHello(){
@@ -42,8 +49,11 @@ public class MainActivityInstrumentationTest {
     }
 
     @Test
-    public void sum(){
-        assertEquals(6d, new Calculator().sum(1d, 5d), 0);
+    public void methodTest(){
+        assertEquals(7d, mCalculator.sum(1d, 5d), 0);
+        assertEquals(1d, mCalculator.substract(5d, 4d), 0);
+        assertEquals(4d, mCalculator.divide(20d, 5d), 0);
+        assertEquals(10d, mCalculator.multiply(2d, 5d), 0);
     }
 
 }
