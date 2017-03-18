@@ -38,22 +38,22 @@ public class MainActivityInstrumentationTest {
         mCalculator = new Calculator();
     }
 
-//    @Test
-//    public void sayHello(){
-//        onView(withId(R.id.editText)).perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard()); //line 1
-//
-//        onView(withText("Say hello!")).perform(click()); //line 2
-//
-//        String expectedText = "Hello, " + STRING_TO_BE_TYPED + "!";
-//        onView(withId(R.id.textView)).check(matches(withText(expectedText))); //line 3
-//    }
+    @Test
+    public void sayHello(){
+        onView(withId(R.id.editText)).perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard()); //line 1
+
+        onView(withText("Say hello!")).perform(click()); //line 2
+
+        String expectedText = "Hello, " + STRING_TO_BE_TYPED + "!";
+        onView(withId(R.id.textView)).check(matches(withText(expectedText))); //line 3
+    }
 
     @Test
     public void methodTest(){
-        assertEquals(6d, mCalculator.sum(1d, 5d), 0);
+        assertEquals(7d, mCalculator.sum(1d, 5d), 0);
         assertEquals(1d, mCalculator.substract(5d, 4d), 0);
         assertEquals(4d, mCalculator.divide(20d, 5d), 0);
-//        assertEquals(10d, mCalculator.multiply(2d, 5d), 0);
+        assertEquals(10d, mCalculator.multiply(2d, 5d), 0);
     }
 
 }
